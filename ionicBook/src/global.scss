@@ -1,0 +1,96 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import '@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+
+/* global.scss */
+/* global.scss */
+:root {
+    --ion-color-primary: #FF9B9B;
+    --ion-color-primary-rgb: 255, 155, 155;
+    --ion-color-primary-contrast: #000000;
+    --ion-color-primary-contrast-rgb: 0, 0, 0;
+    --ion-color-primary-shade: #FF8C8C;
+    --ion-color-primary-tint: #FFACAC;
+
+    --ion-color-secondary: #FFD6A5;
+    --ion-color-secondary-rgb: 255, 214, 165;
+    --ion-color-secondary-contrast: #000000;
+    --ion-color-secondary-contrast-rgb: 0, 0, 0;
+    --ion-color-secondary-shade: #FFC497;
+    --ion-color-secondary-tint: #FFD9B6;
+
+    --ion-color-tertiary: #FFFEC4;
+    --ion-color-tertiary-rgb: 255, 254, 196;
+    --ion-color-tertiary-contrast: #000000;
+    --ion-color-tertiary-contrast-rgb: 0, 0, 0;
+    --ion-color-tertiary-shade: #FFE4A5;
+    --ion-color-tertiary-tint: #FFFFD6;
+
+    --ion-color-success: #CBFFA9;
+    --ion-color-success-rgb: 203, 255, 169;
+    --ion-color-success-contrast: #000000;
+    --ion-color-success-contrast-rgb: 0, 0, 0;
+    --ion-color-success-shade: #B4E89C;
+    --ion-color-success-tint: #D2FFB6;
+
+    --ion-font-family: "YourCustomFont", sans-serif;
+}
+
+body{
+    background: white;
+}
+
+
+// ion-content {
+//     --background: url('https://www.wallpaperflare.com/static/298/132/921/hellboy-cthulhu-gray-gargoyle-wallpaper.jpg') no-repeat center center fixed;
+// }
+
+ion-content {
+    --background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), url('https://www.wallpaperflare.com/static/298/132/921/hellboy-cthulhu-gray-gargoyle-wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+ion-button {
+    --background: var(--ion-color-primary);
+    --color: var(--ion-color-primary-contrast);
+}
+
+ion-button.ion-color-secondary {
+    --background: var(--ion-color-secondary);
+    --color: var(--ion-color-secondary-contrast);
+}
+
+ion-button.ion-color-tertiary {
+    --background: var(--ion-color-tertiary);
+    --color: var(--ion-color-tertiary-contrast);
+}
+
+ion-button.ion-color-success {
+    --background: var(--ion-color-success);
+    --color: var(--ion-color-success-contrast);
+}

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title>
+      Vista
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-searchbar [(ngModel)]="searchTerm" (ionChange)="filterLibros()"></ion-searchbar>
+
+  <ion-list>
+    <ion-item *ngFor="let libro of libros">
+      <ion-label>{{ libro.title }}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-button  (click)="filterLibros()">Filtrar</ion-button>
+
+  <ion-button (click)="goToHomePage()">Volver</ion-button>
+</ion-content>
